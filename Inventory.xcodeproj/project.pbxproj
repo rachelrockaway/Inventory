@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		4975A13C1BFAFDE900DE04B8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975A13B1BFAFDE900DE04B8 /* libsqlite3.dylib */; };
 		4975A13E1BFB007A00DE04B8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975A13D1BFB007A00DE04B8 /* Accounts.framework */; };
 		4975A1401BFB008100DE04B8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975A13F1BFB008100DE04B8 /* Social.framework */; };
+		4975A1451BFB11BC00DE04B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975A1441BFB11BC00DE04B8 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		4975A13B1BFAFDE900DE04B8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4975A13D1BFB007A00DE04B8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4975A13F1BFB008100DE04B8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4975A1441BFB11BC00DE04B8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,19 +100,7 @@
 		4975A0F91BFA9B5500DE04B8 = {
 			isa = PBXGroup;
 			children = (
-				4975A13F1BFB008100DE04B8 /* Social.framework */,
-				4975A13D1BFB007A00DE04B8 /* Accounts.framework */,
-				4975A13B1BFAFDE900DE04B8 /* libsqlite3.dylib */,
-				4975A1391BFAFDBE00DE04B8 /* libz.dylib */,
-				4975A1371BFAFDA600DE04B8 /* SystemConfiguration.framework */,
-				4975A1351BFAFD9B00DE04B8 /* StoreKit.framework */,
-				4975A1331BFAFD9400DE04B8 /* Security.framework */,
-				4975A1311BFAFD8C00DE04B8 /* QuartzCore.framework */,
-				4975A12F1BFAFD8300DE04B8 /* CoreGraphics.framework */,
-				4975A12D1BFAFD7A00DE04B8 /* CFNetwork.framework */,
-				4975A12B1BFAFD7200DE04B8 /* AudioToolbox.framework */,
-				4975A1271BFAFD4700DE04B8 /* Bolts.framework */,
-				4975A1281BFAFD4700DE04B8 /* Parse.framework */,
+				4975A1431BFB032100DE04B8 /* Frameworks */,
 				4975A1041BFA9B5500DE04B8 /* Inventory */,
 				4975A11A1BFA9B5500DE04B8 /* InventoryTests */,
 				4975A1031BFA9B5500DE04B8 /* Products */,
@@ -132,6 +122,7 @@
 				4975A1071BFA9B5500DE04B8 /* AppDelegate.swift */,
 				4975A1091BFA9B5500DE04B8 /* ViewController.swift */,
 				4975A10B1BFA9B5500DE04B8 /* Main.storyboard */,
+				4975A1441BFB11BC00DE04B8 /* LoginViewController.swift */,
 				4975A10E1BFA9B5500DE04B8 /* Images.xcassets */,
 				4975A1101BFA9B5500DE04B8 /* LaunchScreen.xib */,
 				4975A1051BFA9B5500DE04B8 /* Supporting Files */,
@@ -162,6 +153,26 @@
 				4975A11C1BFA9B5500DE04B8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4975A1431BFB032100DE04B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4975A13D1BFB007A00DE04B8 /* Accounts.framework */,
+				4975A13B1BFAFDE900DE04B8 /* libsqlite3.dylib */,
+				4975A1391BFAFDBE00DE04B8 /* libz.dylib */,
+				4975A1371BFAFDA600DE04B8 /* SystemConfiguration.framework */,
+				4975A1351BFAFD9B00DE04B8 /* StoreKit.framework */,
+				4975A1331BFAFD9400DE04B8 /* Security.framework */,
+				4975A1311BFAFD8C00DE04B8 /* QuartzCore.framework */,
+				4975A12F1BFAFD8300DE04B8 /* CoreGraphics.framework */,
+				4975A12D1BFAFD7A00DE04B8 /* CFNetwork.framework */,
+				4975A12B1BFAFD7200DE04B8 /* AudioToolbox.framework */,
+				4975A1271BFAFD4700DE04B8 /* Bolts.framework */,
+				4975A1281BFAFD4700DE04B8 /* Parse.framework */,
+				4975A13F1BFB008100DE04B8 /* Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +232,7 @@
 				};
 			};
 			buildConfigurationList = 4975A0FD1BFA9B5500DE04B8 /* Build configuration list for PBXProject "Inventory" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4975A1451BFB11BC00DE04B8 /* LoginViewController.swift in Sources */,
 				4975A10A1BFA9B5500DE04B8 /* ViewController.swift in Sources */,
 				4975A1081BFA9B5500DE04B8 /* AppDelegate.swift in Sources */,
 			);
