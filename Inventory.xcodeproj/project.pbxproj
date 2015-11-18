@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492B338F1BFC3BA100F61B05 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492B338E1BFC3BA100F61B05 /* ParseUI.framework */; };
+		496263C01BFBD546000E5BBE /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496263BF1BFBD546000E5BBE /* PostsTableViewController.swift */; };
 		4975A1081BFA9B5500DE04B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975A1071BFA9B5500DE04B8 /* AppDelegate.swift */; };
-		4975A10A1BFA9B5500DE04B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975A1091BFA9B5500DE04B8 /* ViewController.swift */; };
+		4975A10A1BFA9B5500DE04B8 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975A1091BFA9B5500DE04B8 /* ComposeViewController.swift */; };
 		4975A10D1BFA9B5500DE04B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4975A10B1BFA9B5500DE04B8 /* Main.storyboard */; };
 		4975A10F1BFA9B5500DE04B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4975A10E1BFA9B5500DE04B8 /* Images.xcassets */; };
 		4975A1121BFA9B5500DE04B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4975A1101BFA9B5500DE04B8 /* LaunchScreen.xib */; };
@@ -27,6 +29,7 @@
 		4975A13E1BFB007A00DE04B8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975A13D1BFB007A00DE04B8 /* Accounts.framework */; };
 		4975A1401BFB008100DE04B8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975A13F1BFB008100DE04B8 /* Social.framework */; };
 		4975A1451BFB11BC00DE04B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975A1441BFB11BC00DE04B8 /* LoginViewController.swift */; };
+		49A419C81BFC1CB200BBB68C /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A419C71BFC1CB200BBB68C /* PostsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		492B338E1BFC3BA100F61B05 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		496263BF1BFBD546000E5BBE /* PostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		4975A1021BFA9B5500DE04B8 /* Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4975A1061BFA9B5500DE04B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4975A1071BFA9B5500DE04B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4975A1091BFA9B5500DE04B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4975A1091BFA9B5500DE04B8 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		4975A10C1BFA9B5500DE04B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4975A10E1BFA9B5500DE04B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4975A1111BFA9B5500DE04B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		4975A13D1BFB007A00DE04B8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4975A13F1BFB008100DE04B8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4975A1441BFB11BC00DE04B8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		49A419C71BFC1CB200BBB68C /* PostsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			files = (
 				4975A1401BFB008100DE04B8 /* Social.framework in Frameworks */,
 				4975A13E1BFB007A00DE04B8 /* Accounts.framework in Frameworks */,
+				492B338F1BFC3BA100F61B05 /* ParseUI.framework in Frameworks */,
 				4975A13C1BFAFDE900DE04B8 /* libsqlite3.dylib in Frameworks */,
 				4975A13A1BFAFDBE00DE04B8 /* libz.dylib in Frameworks */,
 				4975A1381BFAFDA600DE04B8 /* SystemConfiguration.framework in Frameworks */,
@@ -119,9 +126,11 @@
 		4975A1041BFA9B5500DE04B8 /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				49A419C71BFC1CB200BBB68C /* PostsTableViewCell.swift */,
 				4975A1071BFA9B5500DE04B8 /* AppDelegate.swift */,
-				4975A1091BFA9B5500DE04B8 /* ViewController.swift */,
+				4975A1091BFA9B5500DE04B8 /* ComposeViewController.swift */,
 				4975A10B1BFA9B5500DE04B8 /* Main.storyboard */,
+				496263BF1BFBD546000E5BBE /* PostsTableViewController.swift */,
 				4975A1441BFB11BC00DE04B8 /* LoginViewController.swift */,
 				4975A10E1BFA9B5500DE04B8 /* Images.xcassets */,
 				4975A1101BFA9B5500DE04B8 /* LaunchScreen.xib */,
@@ -158,6 +167,7 @@
 		4975A1431BFB032100DE04B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				492B338E1BFC3BA100F61B05 /* ParseUI.framework */,
 				4975A13D1BFB007A00DE04B8 /* Accounts.framework */,
 				4975A13B1BFAFDE900DE04B8 /* libsqlite3.dylib */,
 				4975A1391BFAFDBE00DE04B8 /* libz.dylib */,
@@ -219,6 +229,8 @@
 		4975A0FA1BFA9B5500DE04B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = rachelrockaway;
 				TargetAttributes = {
@@ -276,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4975A1451BFB11BC00DE04B8 /* LoginViewController.swift in Sources */,
-				4975A10A1BFA9B5500DE04B8 /* ViewController.swift in Sources */,
+				4975A10A1BFA9B5500DE04B8 /* ComposeViewController.swift in Sources */,
+				49A419C81BFC1CB200BBB68C /* PostsTableViewCell.swift in Sources */,
 				4975A1081BFA9B5500DE04B8 /* AppDelegate.swift in Sources */,
+				496263C01BFBD546000E5BBE /* PostsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

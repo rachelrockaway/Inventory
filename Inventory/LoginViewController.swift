@@ -7,7 +7,9 @@
 //
 
 import Parse
+import ParseUI
 import UIKit
+import Bolts
 
 class LoginViewController: UIViewController {
     
@@ -37,12 +39,12 @@ class LoginViewController: UIViewController {
         if (error == nil) {
             // Successfully logged in.
             
-            print("Successfully Logged In.")
+            print("Successfully Logged In.", terminator: "")
             
         } else {
             // Error while logging in.
             
-            var alertController = UIAlertController(title: "Error", message: "Error, Incorrect Username/Password.", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Error", message: "Error, Incorrect Username/Password.", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
             
